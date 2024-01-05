@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: "db/tables/designation.yml"
+  - include:
+      file: "db/tables/employee.yml"
+  - include:
+      file: "db/tables/task.yml"
