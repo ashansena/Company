@@ -52,13 +52,13 @@ public class DesignationService {
 		return updatedDesignation;
 	}
 
-//	public String deleteDesignation(Long designationId){
-//		Optional<Designation> designation=designationRepository.findById(designationId);
-//		if(designation.isPresent()){
-//			designationRepository.deleteById(designationId);
-//			return "Successfully Deleted";
-//		}else{
-//			return "Not Found";
-//		}
-//	}
+	public String deleteDesignation(Long designationId){
+		Optional<Designation> designation=designationRepository.findById(designationId);
+		if(designation.isPresent()){
+			designationRepository.deleteById(designationId);
+			return "Successfully Deleted";
+		}else{
+			return "Not Found";
+		}
+	}
 }
